@@ -270,7 +270,7 @@ user.afkReason = ''
 // Detect Group Invite
 if (m.mtype === 'groupInviteMessage') {
 teks = `Ketik join untuk bergabung ke group whatsapp anda`
-sendOrder(m.chat, teks, "391028153034238", fs.readFileSync('./media/image/mans.jpg'), 2022, "ZackMans Official ~ Multi Device", "6283155687629@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
+sendOrder(m.chat, teks, "391028153034238", fs.readFileSync('./media/image/mans.jpg'), 2022, "HumanzBotzMD ~ Multi Device", "6288804947282@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
 }
 
 // Anti Hidetag X-Zons
@@ -278,7 +278,7 @@ if (AntiHidetag) {
 if (m.mentionedJid.length === participants.length) {
 if (!m.isGroup) return // Mendetect Groupnyee
 if (!isBotAdmins) return // Mendetect Botnyee
-m.reply("Jangan maenin hidetag babi!")
+m.reply("Jangan maenin hidetag nying")
 await mans.groupParticipantsUpdate(m.chat, [m.sender], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 }
 }
@@ -675,8 +675,8 @@ const fgclink = {
 "groupInviteMessage": {
 "groupJid": "120363043965529911@g.us",
 "inviteCode": "HDmXvmHpEkE9wRJy3IO6OZ",
-"groupName": "ZackMans Broadcast", 
-"caption": "ZackMans Broadcast", 
+"groupName": "HumanzBotzMD Broadcast", 
+"caption": "HumanzBotzMD Broadcast", 
 'jpegThumbnail': log0
 }
 }
@@ -737,7 +737,7 @@ const rurl = relink[Math.floor(Math.random() * relink.length)];
 mamans = teks
 mans.sendMessage(m.chat, {text:mamans, mentions: await mans.parseMention(mamans), contextInfo:{externalAdReply:{
 title: `${ucapanWaktu} ${pushname}`,
-body: "© MyMans APIs - X - ZackMans Official",
+body: "© MyMans APIs - X - HumanzBotzMD",
 thumbnail: thum,
 mediaType:1,
 mediaUrl: rurl,
@@ -749,9 +749,9 @@ sourceUrl: rurl
 const zckmn = await fetchJson("https://ZackMans.github.io/database/zackbotmans.json")
 const ceknyai = require('./package.json').version
 if (zckmn.update === ceknyai) {
-cekbotinfo = `Anda menggunakan zackbotmans versi terbaru (${ceknyai}), belum ada update dari owner`
+cekbotinfo = `Anda menggunakan humanzbotzmd versi terbaru (${ceknyai}), belum ada update dari owner`
 } else {
-cekbotinfo = `Anda menggunakan zackbotmans v${ceknyai}, owner telah mengupdate zackbotmans ke v${zckmn.update}, ketik cekupdate untuk melihat versi terbaru`
+cekbotinfo = `Anda menggunakan humanzbotzmd v${ceknyai}, owner telah mengupdate humanzbotzmd ke v${zckmn.update}, ketik cekupdate untuk melihat versi terbaru`
 }
 
 let getjson = await mans.query({
@@ -767,7 +767,7 @@ let thnsto = getjson.content[0].content[0].content[0].content ? getjson.content[
 let cBandwidth = await checkBandwidth()
 let prefs = ` ▸ ${prefix}`
 const listmn = `*ROBOT WHATSAPP MULTI DEVICE*
-_Script By MyMans APIs - X - ZackMans Official_
+_Script By MyMans APIs - X - HumanzBotzMD_
 
 ${cekbotinfo}
 
@@ -974,7 +974,7 @@ ${prefs}cowner <add/del>
 > / => / $ / <
 
 THANKS TO :
-adiwajshing, MhankBarBar, Nurutomo, MyMans APIs - X - ZackMans Official, ${thnsto}, Heroku, Replit, Railway, Termux, Rest APIs, Penyedia Module, Mastah Lainya
+adiwajshing, MhankBarBar, Nurutomo, MyMans APIs - X - HumanzBotzMD, ${thnsto}, Heroku, Replit, Railway, Termux, Rest APIs, Penyedia Module, Mastah Lainya
 
 ${ucapanWaktu}
 ${jangwak}`
@@ -993,7 +993,7 @@ video:fs.readFileSync("./media/video/mans.mp4"),
 gifPlayback:true,
 jpegThumbnail:log0,
 caption: listmn,
-footer: '© MyMans APIs - X - ZackMans Official',
+footer: '© MyMans APIs - X - HumanzBotzMD',
 templateButtons: templateButtons
 }
 mans.sendMessage(m.chat, templateMessage)
@@ -1808,7 +1808,7 @@ case 'delete': case 'del': {
 if (isBan) return m.reply(mess.ban)
 if (!m.quoted) return
 let { chat, fromMe, id, isBaileys } = m.quoted
-if (!isBaileys) return m.reply('Pesan tersebut bukan dikirim oleh bot!')
+if (!isBaileys) return m.reply('Pesan tersebut bukan dikirim oleh HumanzBotzMD!')
 mans.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
 }
 break
@@ -1858,7 +1858,7 @@ let buttonMessageVote = {
 image: log0,
 jpegThumbnail: thum,
 caption: teks_vote,
-footer: "© MyMans APIs - X - ZackMans Official",
+footer: "© MyMans APIs - X - HumanzBotzMD",
 buttons: buttonsVote,
 headerType: 1
 }
@@ -1902,7 +1902,7 @@ let buttonMessageUpvote = {
 image: log0,
 jpegThumbnail: thum,
 caption: teks_vote,
-footer: "© MyMans APIs - X - ZackMans Official",
+footer: "© MyMans APIs - X - HumanzBotzMD",
 buttons: buttonsUpvote,
 headerType: 1,
 mentions: menvote
@@ -1947,7 +1947,7 @@ let buttonMessageDevote = {
 image: log0,
 jpegThumbnail: thum,
 caption: teks_vote,
-footer: "© MyMans APIs - X - ZackMans Official",
+footer: "© MyMans APIs - X - HumanzBotzMD",
 buttons: buttonsDevote,
 headerType: 1,
 mentions: menvote
@@ -2122,7 +2122,7 @@ rows: listMsgs
 
 const listMessage = {
 text: "ketuk button dibawah untuk melihat daftar list respon message, ketuk lagi untuk menjalankan fiturnya",
-footer: "© MyMans APIs - X - ZackMans Official",
+footer: "© MyMans APIs - X - HumanzBotzMD",
 title: "     「 List Respon Message 」",
 buttonText: "List Message",
 sections
@@ -2526,7 +2526,7 @@ rows: listSerch
 ]
 const listMessage = {
 text: teskd,
-footer: "© MyMans APIs - X - ZackMans Official",
+footer: "© MyMans APIs - X - HumanzBotzMD",
 title: "     「 Youtube Search Downloader 」",
 buttonText: "List Search",
 mentions: await mans.parseMention(teskd),
@@ -2596,7 +2596,7 @@ case 'tagall': {
 if (isBan) return m.reply(mess.ban)
 if (!m.isGroup) return m.reply(mess.group)
 if (!isAdmins && !isCreator) return m.reply(mess.admin)
-let teks = `══✪〘 *👥 Tag All* 〙✪══
+let teks = `══✪〘 *Tag All* 〙✪══
  
  ➲ *Pesan : ${args.join(" ") ? args.join(" ") : 'kosong'}*\n\n`
 for (let mem of participants) {
@@ -2636,13 +2636,13 @@ if (!m.isGroup) return m.reply(mess.group)
 let response = await mans.groupInviteCode(m.chat)
 mans.sendMessage(m.chat, {text:`Link Group ${groupMetadata.subject} : \nhttps://chat.whatsapp.com/${response}l`, "contextInfo": {
 mimetype: "image/jpeg",
-text: "ZackMans Official",
+text: "HumanzBotzMD Official",
 "forwardingScore": 1000000000,
 isForwarded: true,
 sendEphemeral: true,
 "externalAdReply": {
-"title": `ZackMans Official`,
-"body": `Subscribe To Channel YouTube ZackMans Official`,
+"title": `HumanzBotMD`,
+"body": `Follow To Akun Github Humanz`,
 "previewType": "PHOTO",
 "thumbnailUrl": thum,
 "thumbnail": thum,
@@ -2688,7 +2688,7 @@ let buttons = [
 let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
-caption: `*「 ZackMans Official 」*\n\nChange Info, Select Open Or Close`,
+caption: `*「 HumanzBotzMD 」*\n\nChange Info, Select Open Or Close`,
 footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4
@@ -2714,7 +2714,7 @@ let buttons = [
 let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
-caption: `*「 ZackMans Official 」*\n\nChange Group Setting, Select Open Or Close`,
+caption: `*「 HumanzBotzMD 」*\n\nChange Group Setting, Select Open Or Close`,
 footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4
@@ -2788,11 +2788,11 @@ m.reply('Sukses Broadcast')
 }
 break
 case 'sc': case 'script': case 'donate': case 'donasi': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `     「 ZackMans Official 」\n\n${zckmn.saweria}\n${zckmn.donate}`
+teks = `     「 HumanzBotzMD 」\n\n${zckmn.saweria}\n${zckmn.donate}`
 for (let i of zckmn.source) {
 teks += `\n\nName : ${i.name}\n${i.link}`
 }
-teks += `\n\n${zckmn.group}\n\nPassword : ZackMansOfficial\nDont Forget Donate`
+teks += `github.com/\nDont Forget Donate`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -2804,7 +2804,7 @@ footer: "© " + zckmn.author,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official Saweria ( Donate )",
+title:"HumanzBotzMD Official Saweria ( Donate )",
 body: "© " + zckmn.author,
 thumbnail: fs.readFileSync("media/image/saweria.jpg"),
 mediaType:1,
@@ -3299,8 +3299,8 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - Humanz",
+body:"© MyMans APIs - X - Humanz Official",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtu.be/jKAawPBWe5k",
@@ -3378,7 +3378,7 @@ rows: listBloxk
 
 const listMessage = {
 text: teskd,
-footer: "© MyMans APIs - X - ZackMans Official",
+footer: "© MyMans APIs - X - Humanz Official",
 title: "     「 List Participants Blockir 」",
 buttonText: "List Blockir",
 mentions: await mans.parseMention(teskd),
@@ -3477,8 +3477,8 @@ if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply("Linknya mana kak?")
 try {
 mans.sendMessage(from, {video:{url:args[0]}, caption:"Succes", contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - Humanz",
+body:"© MyMans APIs - X - Humanz",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtu.be/jKAawPBWe5k",
@@ -3494,8 +3494,8 @@ if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply("Linknya mana kak?")
 try {
 mans.sendMessage(from, {image:{url:args[0]}, caption:"Succes", contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - Humnz",
+body:"© MyMans APIs - X - Humnz",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtu.be/jKAawPBWe5k",
@@ -3530,7 +3530,7 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Twitter Downloader",
+title:"Humnz Official - Twitter Downloader",
 body:lotwit.title ? lotwit.title : "Twitter Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -3556,7 +3556,7 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Twitter Downloader",
+title:"hmnz Official - Twitter Downloader",
 body: "Twitter Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -3589,7 +3589,7 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Facebook Downloader",
+title:"Humbz Official - Facebook Downloader",
 body:"facebook downloader",
 thumbnail: log0,
 mediaType:1,
@@ -3615,7 +3615,7 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Facebook Downloader",
+title:"Humnz Official - Facebook Downloader",
 body: " Facebook Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -3651,7 +3651,7 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Tiktok Downloader",
+title:"Humanz Official - Tiktok Downloader",
 body: "Downloader!", // Ttnye.meta.title ? Ttnye.meta.title : "Downloader!"
 thumbnail: thum, // {url:Ttnye.thumb ? Ttnye.thumb : thum}
 mediaType:1,
@@ -3670,7 +3670,7 @@ if (isBan) return m.reply(mess.ban)
 let res = await hx.ttdownloader(args[0]) // atau bisa pake aiovideodl
 // let Ttnye = await bochil.savefrom(args[0])
 mans.sendMessage(from, {audio:{url:res.wm}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
-title:"ZackMans Official - Tiktok Downloader",
+title:"Humanz Official - Tiktok Downloader",
 body: "Downloader!", // Ttnye.meta.title ? Ttnye.meta.title : "Downloader!",
 thumbnail: thum, // {url:Ttnye.thumb ? Ttnye.thumb : thum},
 mediaType:1,
@@ -3700,7 +3700,7 @@ footer: "© MyMans APIs - MyMainas",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Tiktok Downloader",
+title:"Humanx Official - Tiktok Downloader",
 body: "Downloader!", //Ttnye.meta.title ? Ttnye.meta.title : "Downloader!",
 thumbnail: thum, // {url:Ttnye.thumb ? Ttnye.thumb : thum},
 mediaType:1,
@@ -3740,7 +3740,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: anu.title,
-body: "© MyMans APIs - X - ZackMans Official",
+body: "© MyMans APIs - X - Humnzl",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: anu.url,
@@ -3774,7 +3774,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: res.title,
-body: "© MyMans APIs - X - ZackMans Official",
+body: "© MyMans APIs - X - Humnz",
 thumbnail: thum,
 mediaType:2,
 mediaUrl: args[0],
@@ -3791,8 +3791,8 @@ break
 case 'ytvd': {
 if (isBan) return m.reply(mess.ban)
 mans.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success", contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - Humnz",
+body:"© MyMans APIs - X - Humanz",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtu.be/jKAawPBWe5k",
@@ -3803,8 +3803,8 @@ break
 case 'ytad': {
 if (isBan) return m.reply(mess.ban)
 mans.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - Humzn",
+body:"© MyMans APIs - X - Humanz",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtu.be/jKAawPBWe5k",
